@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booksfun</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css">
+  <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css">
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<footer>
+  <div class="container">
+    Awesome Ana is awesome
+  </div>
+</footer>
+
+<script src="//railsgirls.com/assets/bootstrap.js"></script>
+
+</body>
+</html>

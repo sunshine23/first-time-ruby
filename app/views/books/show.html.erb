@@ -1,0 +1,16 @@
+<p id='notice'><%= notice %></p>
+
+<p>
+	<strong>Name:</strong>
+	<%= @book.name %>
+</p>
+
+<p>
+	<strong>Author:</strong>
+	<%= @book.author.name %>
+</p>
+
+<p>
+	<strong>Picture:</strong>
+	<%= image_tag(@book.picture_url, :width => 300) if @book.picture.present? %>
+</p>
